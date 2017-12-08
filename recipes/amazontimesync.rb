@@ -20,7 +20,7 @@ end
 # update chrony.conf file
 if node['platform_family'] == "debian"
   template '/etc/chrony/chrony.conf' do
-    source '/home/ec2-user/chef-repo/chef-cookbook-amazontimesync/templates/default/amazontimesync/debian_chrony.conf.erb'
+    source '/home/ubuntu/chef-repo/chef-cookbook-amazontimesync/templates/default/amazontimesync/debian_chrony.conf.erb'
     local true
     owner 'root'
     group 'root'
